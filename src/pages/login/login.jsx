@@ -4,7 +4,6 @@ import logo from '../../assets/img/Logo3.png';
 import { Link } from 'react-router-dom';
 import {
     Grid,
-    Box,
     TextField,
     Button,
     Stack,
@@ -59,7 +58,7 @@ const Login = () => {
                                  marginLeft: '35px'
                             }} alt="Logo"/>
                     </Stack>
-                        <h1>Sing in </h1>
+                        <h1>Sign in </h1>
                         <Grid container >
                             <Grid item xs={12} sx={{
                                 marginBottom:'10px'
@@ -94,7 +93,7 @@ const Login = () => {
                             <Grid item xs={12} sx={{
                                 marginBottom:'10px'
                             }}>
-                            <Button fullWidth variant="contained" endIcon={<LoginIcon/>}>Sing</Button>
+                            <Button fullWidth variant="contained" endIcon={<LoginIcon/>}>Sign</Button>
                             </Grid>
                             <Link
                             style={{
@@ -102,8 +101,7 @@ const Login = () => {
                                 display:'block',
                                 width: '100%',
                             }} 
-                            to="/register">Criar
-                             Conta</Link>
+                            to="/register">create account</Link>
                         </Grid>
                     </Stack>
                 </Grid>

@@ -4,7 +4,17 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Link,
  } from "react-router-dom"
+
+ import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton
+ } from "@mui/material";
+ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
  import React from 'react';
 
 
@@ -25,6 +35,43 @@ function App() {
   }, [])
   
   return <Router>
+            <AppBar position={'static'}>
+              <Toolbar 
+                style={{
+                  justifyContent: "space-between"
+              }}>
+                 <Typography variant="h6" component="h2">
+                    <Link to="/catalog">
+                      Loja Predo
+                    </Link>
+                 </Typography>
+                 <div>
+                  <IconButton  
+                     edge="end" 
+                     >
+                      <Link to="/cart">
+                        <AddShoppingCartIcon style={{
+                                      color: '#fff',
+                                      marginLeft: 20
+                     }}/>
+                      </Link>
+                   </IconButton>
+                   <IconButton 
+                     edge="end" 
+                     style={{
+                      color: '#fff',
+                      marginLeft: 20
+                     }}>
+                      <Link to="/login">
+                        <ExitToAppIcon style={{
+                                   color: '#fff',
+                                   marginLeft: 20
+                     }}/>
+                      </Link>
+                 </IconButton>
+                 </div>
+              </Toolbar>
+           </AppBar>
             <Suspense fallback={'Carregando'}>
               <Routes>
               <Route exact path="/" element={<Catalog/>}/>

@@ -1,0 +1,65 @@
+.Grid {
+    margin-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.catalog-item{
+    position: relative;  
+    padding-top: 0 !important;
+    margin-bottom: 50px;
+    width: 100%;
+    float: left;
+}
+
+.category-label{
+    color: #fff;
+    box-sizing: border-box;
+    background: rgb(18, 110, 214);
+    font-weight: border-box;
+    padding: 5px;
+    border-radius: 5px 8px;
+    margin-right: 5px;
+    margin-top: 8px;
+    float: left;
+}
+
+.desconto-item{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 0 0 0 10px;
+}
+
+.nome-produto{
+    width: 100%;
+    float: left;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.lorem-item{
+    float: left;
+    margin-bottom: 20px;
+}
+
+.img-item{
+    width: 99%;
+}
+
+.catalog-item .promo_price {
+    font-size: 20px;
+}
+
+.catalog-item .price{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+

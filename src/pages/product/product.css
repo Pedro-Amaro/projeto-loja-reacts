@@ -1,0 +1,89 @@
+.product{
+    margin-top: 35px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.imageSide{
+
+}
+ 
+.imageSide > .mainImage_image .imageSide_image-item{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imageSide > .iconImage_images{
+    height: 105px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.imageSide > .iconImage_images >img{
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.productItem{}
+.productItem .productItem_title{
+    color: rgb(28, 25, 209);
+    font-weight: 600;
+}
+.productItem .product_categories{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.productItem_quantity input {
+    width: 30px;
+}
+
+.productItem .product_categories .productItem_categories-label {
+    margin-right: 10px;
+}
+
+.productItem .productItem_promo_price{
+    float: left;
+    margin-right: 10px;
+    font-size: 20px;
+}       
+
+.productItem .productItem_price{
+    font-weight: 700;
+}
+.productItem .productItem_descrption{
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.productItem .productItem_quantity{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.productItem .productItem_quantity input::-webkit-outer-spin-button,
+.productItem .productItem_quantity input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.productItem .productItem_quantity input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+.productItem .productItem_buy{
+}
+
+@media screen and (min-widht: 1297px){
+    .product{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

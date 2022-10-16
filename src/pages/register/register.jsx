@@ -124,7 +124,7 @@ const Register = () => {
                                 display:'block',
                                 width: '100%',
                             }} 
-                            to="/login">Sing</Link>
+                            to="/login">Sign</Link>
                         </Grid>
                     </Stack>
                 </Grid>
