@@ -9,8 +9,8 @@ const Catalog = () => {
         {
             Object.keys(products).map(id => {
                 return  <Grid item xs={12} sm={6} md={4} lg={3} className="catalog-item">
-                    <span className="desconto-item"
-                    >40%</span>
+                    <span className="desconto-item">40%</span>
+                    
                     <img className="img-item" src={products[id].images[1]}/>
 
                     {

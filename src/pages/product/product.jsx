@@ -58,8 +58,8 @@ const Product = () => {
              </Grid>
              <Grid item xs={12} sm={7} className="productItem">
                 <Typography variant="h4" component="h1" className="productItem_title">{products[params.id].name}</Typography>
-                <div               className="product_categories">
-                    
+                <div className="product_categories">
+        
                     {
                        products[params.id].categories.map(categoryId =><Chip className="productItem_categories-label" label={categories[categoryId].name}/>)
                     }

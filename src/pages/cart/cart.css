@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(238, 238, 238);
+}
+
+.boxCompras{
+  padding: 20px !important;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 12px -6px rgba(0,0,0,0.6);
+}
+
+.listTotal {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.listTotal li{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.stackQuantity input{
+  width: 30px;
+}
+
+.stackQuantity input::-webkit-outer-spin-button,
+.stackQuantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.stackQuantity input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.stackImage div{
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
