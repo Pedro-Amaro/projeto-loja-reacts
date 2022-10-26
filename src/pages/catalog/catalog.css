@@ -58,10 +58,15 @@
 
 .catalog-item .promo_price {
     font-size: 20px;
+    float: left;
 }
 
 .catalog-item .price{
     margin-top: 90px;
     margin-bottom: 15px;
+}
+
+.ver_produto{
+    bottom: 56px;
 }
 

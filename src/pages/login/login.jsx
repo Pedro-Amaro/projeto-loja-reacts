@@ -19,6 +19,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import React, { useState } from 'react';
 
+
 const Login = () => {
     const [visibilityToggle, setvisibilityToggle] = useState(false);
 
@@ -93,15 +94,15 @@ const Login = () => {
                             <Grid item xs={12} sx={{
                                 marginBottom:'10px'
                             }}>
-                            <Button fullWidth variant="contained" endIcon={<LoginIcon/>}>Sign</Button>
+                             <Button fullWidth style={{display: 'inline'}} variant="contained" endIcon={<LoginIcon/>}>Sign</Button>
                             </Grid>
                             <Link
                             style={{
                                 textAlign: 'center',
                                 display:'block',
                                 width: '100%',
-                            }} 
-                            to="/register">create account</Link>
+                             }} 
+                              to="/register">create account</Link>
                         </Grid>
                     </Stack>
                 </Grid>

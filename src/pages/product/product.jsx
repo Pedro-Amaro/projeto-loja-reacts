@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { products, categories } from '../catalog/products';
 import {
     Grid,
@@ -40,7 +40,7 @@ const Product = () => {
     }
 
     return <Grid container spacing={2} className="product">
-             <Grid item xs={12} sm={5} className="imageSide">
+            <Grid item xs={12} sm={5} className="imageSide">
                 <Stack   className="mainImage_image">
                     <div className="imageSide_image-item" style={{
                         backgroundImage: `url(${currentImage})`
@@ -55,13 +55,13 @@ const Product = () => {
                     }
                     
                 </Stack>
-             </Grid>
-             <Grid item xs={12} sm={7} className="productItem">
+            </Grid>
+            <Grid item xs={12} sm={7} className="productItem">
                 <Typography variant="h4" component="h1" className="productItem_title">{products[params.id].name}</Typography>
                 <div className="product_categories">
         
                     {
-                       products[params.id].categories.map(categoryId =><Chip className="productItem_categories-label" label={categories[categoryId].name}/>)
+                    products[params.id].categories.map(categoryId =><Chip className="productItem_categories-label" label={categories[categoryId].name}/>)
                     }
                 </div>
 
@@ -91,11 +91,14 @@ const Product = () => {
                         <AddCircleOutlineIcon color='primary'/>
                     </IconButton>
                 </div>
-                <Button variant="contained" size="large" endIcon={<ShoppingCartIcon/>}
+                    <Link to={"../cart"}>
+                    <Button style={{display: 'inline'}} variant="contained" size="large" endIcon={<ShoppingCartIcon/>}
                 className="productItem_buy">Buy</Button> 
-             </Grid>
+                    </Link>
+                
+            </Grid>
 
-           </Grid>
+        </Grid>
 
    // return <h1>
    //            Produto 

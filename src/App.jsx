@@ -41,8 +41,11 @@ function App() {
                   justifyContent: "space-between"
               }}>
                  <Typography variant="h6" component="h2">
+                    <div>
+                      Parfums Glactiques
+                    </div>
                     <Link to="/catalog">
-                      Loja Predo
+                      <img src='https://static.vecteezy.com/ti/vetor-gratis/t2/2187366-perfume-neon-sinais-estilo-texto-gr%C3%A1tis-vetor.jpg' height="100px"/> 
                     </Link>
                  </Typography>
                  <div>

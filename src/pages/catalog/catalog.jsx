@@ -9,16 +9,17 @@ const Catalog = () => {
         {
             Object.keys(products).map(id => {
                 return  <Grid item xs={12} sm={6} md={4} lg={3} className="catalog-item">
-                    <span className="desconto-item">40%</span>
+                    <span className="desconto-item">20%</span>
                     
                     <img className="img-item" src={products[id].images[1]}/>
-
+                    <Link to={"../product/" + id}>
                     {
                         products[id].categories.map(categoryId => {
                             return <span className='category-label'> {categories[categoryId].name} </span>
                         })
+                        
                     }
-                    
+                    </Link>
                     <Typography variant="h4" component="h4" className="nome-produto">{products[id].name}</Typography>
 
                     {
@@ -33,12 +34,19 @@ const Catalog = () => {
 
                     
                     <Typography variant="p" component="p" className="lorem-item" >{products[id].description.substring(0, 300)}...</Typography>
-
-                    <Link to={"../product/" + id}>
-                        <Button fullWidth variant="contained">
-                            Ver produto
+                    <div>
+                        <Link to={"../product/" + id}>
+                            <Button fullWidth variant="contained" sx={{
+                                display: 'inline'
+                            }} >
+                                {
+                                    products[id].button ? <Typography fullWidth  variant="p" component="p" >{products[id].button}</Typography> 
+                                    : <Typography fullWidth variant="p" component="p">Ver produto</Typography> 
+                                }
                          </Button>
-                    </Link>
+                        </Link>
+                    </div>
+                    
                 </Grid>
              })
         }

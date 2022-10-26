@@ -14,6 +14,7 @@ const products = {
         promo_price: 96.19,
         percent: 15,
         categories: [1, 2, 3],
+        button: "ver produto"
     },
    1: {
         
@@ -42,6 +43,7 @@ const products = {
         promo_price: 72.99,
         percent: 15,
         categories: [7, 8, 9],
+        button: "ver produto",
     },
    2:{
        

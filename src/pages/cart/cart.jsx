@@ -1,5 +1,6 @@
 import React from 'react';
 import {productsCart} from './produtos-cart';
+import { calculateTotal, calculatePromo,} from "../../utils/calculate";
 import { Grid, List, ListItem, ListItemAvatar, Stack, Typography, IconButton, TextField, Button,  } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import "./cart.css";
@@ -8,23 +9,14 @@ import { Link } from "react-router-dom"
 
 
 const Cart = () => {
-    const totals = [
-        [110.99, null],
-        [100.99,null],
-        [96.19, 23.8]
-    ]
-    
-    const total = totals.reduce((pValue, cValue) =>{
-        return cValue[0] + pValue;
-    }, 0 )
+    const totals = Object.keys(productsCart).map(id => {
+        let qtd = productsCart[id].quantity;
+        return [productsCart[id].price * qtd, productsCart[id].promo_price * qtd]
+    })
 
-    const totalPromo = totals.reduce((pValue, cValue) =>{
-        if(cValue[1]){
-            return (cValue[1]) + pValue;
-        }
-        return 0 + pValue;
-    }, 0 )
-    console.log(totalPromo)
+    const total= calculateTotal(totals);
+    const totalPromo= calculatePromo(totals);
+
 
 return <Grid container spacing={2} sx={{
     padding: '40px',
@@ -51,7 +43,7 @@ return <Grid container spacing={2} sx={{
                     <IconButton sx={{
                         right: '10px'
                     }}
-                    edge="end"           aria-label="delete">
+                    edge="end" aria-label="delete">
                         <DeleteIcon />
                     </IconButton>
                } 
@@ -185,9 +177,10 @@ return <Grid container spacing={2} sx={{
                 <span>{(total - totalPromo).toLocaleString('en-US', { style:'currency',currency: 'USD' })}</span>
             </li>
         </ul>
-         <Link to="checkout">
-            <Button variant="contained" fullWidth>Finalziar</Button>
-         </Link>   
+
+         <Link to="../Checkout">
+             <Button variant="contained" fullWidth>Pagar</Button>
+         </Link>
     </div>
         
 </Grid>

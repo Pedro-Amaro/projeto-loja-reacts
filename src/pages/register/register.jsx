@@ -115,16 +115,16 @@ const Register = () => {
                             </Grid>
                             <Grid item xs={12} sx={{
                                 marginBottom:'10px'
-                            }}>
-                            <Button fullWidth variant="contained" endIcon={<LoginIcon/>}>Register</Button>
+                             }}>
+                             <Button style={{display: 'inline'}} fullWidth variant="contained" endIcon={<LoginIcon/>}>Register</Button>
                             </Grid>
                             <Link
-                            style={{
+                             style={{
                                 textAlign: 'center',
                                 display:'block',
                                 width: '100%',
-                            }} 
-                            to="/login">Sign</Link>
+                             }} 
+                             to="/login">Sign</Link>
                         </Grid>
                     </Stack>
                 </Grid>

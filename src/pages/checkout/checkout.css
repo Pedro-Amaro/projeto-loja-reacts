@@ -1,0 +1,66 @@
+.checkout{
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.order-details{
+    padding-top: 30px !important;
+}
+
+.order-details h6{
+    font-weight: 700;
+    font-size: 1.4em; 
+}
+
+.order-details div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block;
+    float: left;
+    padding: 0.9px;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+}
+
+.order-details ul{
+    list-style: none;
+    padding: 0%;
+    float: left;
+    width: 100%;
+}
+
+.order-details ul li{
+
+}
+
+.order-details hr{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    float: left;
+    width: 100%;
+}
+
+.order-details ul span{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 2px 1px; 
+}
+
+.order-details ul span:first-child{
+    text-align: left;
+}
+
+.order-details ul span:last-child{
+    text-align: right;
+}
+
+@media screen and (min-width: 1297px) {
+    .checkout {
+        max-width: 1280px;
+        margin: 0 auto !important;
+    }
+}

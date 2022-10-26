@@ -12,6 +12,7 @@ a{
   text-decoration: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -30,7 +31,7 @@ a{
 }
 
 .App-link {
-  color: #61dafb;
+  color: #13bceb;
 }
 
 @keyframes App-logo-spin {
