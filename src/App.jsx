@@ -5,17 +5,18 @@ import {
   Routes,
   Route,
   Link,
- } from "react-router-dom"
+} from "react-router-dom"
 
- import {
+import {
   AppBar,
   Toolbar,
   Typography,
   IconButton
- } from "@mui/material";
- import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
- import ExitToAppIcon from '@mui/icons-material/ExitToApp';
- import React from 'react';
+} from "@mui/material";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import React from 'react';
+import { red } from '@mui/material/colors';
 
 
 const Login = lazy(() => import('./pages/login/login'));
@@ -29,52 +30,49 @@ const NotFound= lazy(() => import('./pages/not-found/not-found'));
 
 
 function App() {
-  
-  
   useEffect(() => {
   }, [])
   
-  return <Router>
-            <AppBar position={'static'}>
+  return <Router >
+            <AppBar position={'static'} className="topo">
               <Toolbar 
                 style={{
-                  justifyContent: "space-between"
+                  justifyContent: "space-between",
               }}>
-                 <Typography variant="h6" component="h2">
+                <Typography variant="h6" component="h2">
                     <div>
+                      <Link to="/catalog">
                       Parfums Glactiques
+                      </Link>
                     </div>
-                    <Link to="/catalog">
-                      <img src='https://static.vecteezy.com/ti/vetor-gratis/t2/2187366-perfume-neon-sinais-estilo-texto-gr%C3%A1tis-vetor.jpg' height="100px"/> 
-                    </Link>
-                 </Typography>
-                 <div>
+                </Typography>
+                <div>
                   <IconButton  
-                     edge="end" 
-                     >
+                    edge="end" 
+                    >
                       <Link to="/cart">
                         <AddShoppingCartIcon style={{
                                       color: '#fff',
                                       marginLeft: 20
-                     }}/>
+                    }}/>
                       </Link>
-                   </IconButton>
-                   <IconButton 
-                     edge="end" 
-                     style={{
+                  </IconButton>
+                  <IconButton 
+                    edge="end" 
+                    style={{
                       color: '#fff',
                       marginLeft: 20
-                     }}>
+                    }}>
                       <Link to="/login">
                         <ExitToAppIcon style={{
-                                   color: '#fff',
-                                   marginLeft: 20
-                     }}/>
+                                  color: '#fff',
+                                  marginLeft: 20
+                    }}/>
                       </Link>
-                 </IconButton>
-                 </div>
+                </IconButton>
+                </div>
               </Toolbar>
-           </AppBar>
+            </AppBar>
             <Suspense fallback={'Carregando'}>
               <Routes>
               <Route exact path="/" element={<Catalog/>}/>
@@ -87,7 +85,7 @@ function App() {
                 <Route path="*" element={<NotFound/>}/>
               </Routes>
             </Suspense>
-    	  </Router>;
+    	    </Router>;
 }
 
 export default App;

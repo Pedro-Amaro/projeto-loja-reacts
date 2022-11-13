@@ -1,5 +1,5 @@
 const products = {
-   3: {   
+    3: {   
         
         name: 'Perfume Savage',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec pulvinar urna. Nullam eleifend lacinia tristique. Suspendisse tempus nec nibh euismod accumsan. Nunc est elit, laoreet non varius et, hendrerit vel arcu. Quisque nunc nunc, feugiat eget est ac, ultrices blandit libero. Suspendisse potenti. Donec ut elementum nulla, in tristique arcu. Nam commodo consequat ultricies. Nullam malesuada libero erat, quis varius lectus porta a. Quisque feugiat ullamcorper varius. Quisque facilisis eget turpis quis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer rhoncus, erat in pretium finibus, ligula metus ullamcorper lorem, at pulvinar est risus vitae leo.',
@@ -16,7 +16,7 @@ const products = {
         categories: [1, 2, 3],
         button: "ver produto"
     },
-   1: {
+    1: {
         
         name: 'Perfume One Million',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec pulvinar urna. Nullam eleifend lacinia tristique. Suspendisse tempus nec nibh euismod accumsan. Nunc est elit, laoreet non varius et, hendrerit vel arcu. Quisque nunc nunc, feugiat eget est ac, ultrices blandit libero. Suspendisse potenti. Donec ut elementum nulla, in tristique arcu. Nam commodo consequat ultricies. Nullam malesuada libero erat, quis varius lectus porta a. Quisque feugiat ullamcorper varius. Quisque facilisis eget turpis quis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer rhoncus, erat in pretium finibus, ligula metus ullamcorper lorem, at pulvinar est risus vitae leo.',
@@ -30,7 +30,7 @@ const products = {
         percent: 15,
         categories: [4, 5, 6],
     },
-   4:{
+    4:{
         
         name: 'Perfume Calvin Klein ',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec pulvinar urna. Nullam eleifend lacinia tristique. Suspendisse tempus nec nibh euismod accumsan. Nunc est elit, laoreet non varius et, hendrerit vel arcu. Quisque nunc nunc, feugiat eget est ac, ultrices blandit libero. Suspendisse potenti. Donec ut elementum nulla, in tristique arcu. Nam commodo consequat ultricies. Nullam malesuada libero erat, quis varius lectus porta a. Quisque feugiat ullamcorper varius. Quisque facilisis eget turpis quis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer rhoncus, erat in pretium finibus, ligula metus ullamcorper lorem, at pulvinar est risus vitae leo.',
@@ -45,8 +45,7 @@ const products = {
         categories: [7, 8, 9],
         button: "ver produto",
     },
-   2:{
-       
+    2:{
         name: 'Perfume Chanel',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec pulvinar urna. Nullam eleifend lacinia tristique. Suspendisse tempus nec nibh euismod accumsan. Nunc est elit, laoreet non varius et, hendrerit vel arcu. Quisque nunc nunc, feugiat eget est ac, ultrices blandit libero. Suspendisse potenti. Donec ut elementum nulla, in tristique arcu. Nam commodo consequat ultricies. Nullam malesuada libero erat, quis varius lectus porta a. Quisque feugiat ullamcorper varius. Quisque facilisis eget turpis quis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer rhoncus, erat in pretium finibus, ligula metus ullamcorper lorem, at pulvinar est risus vitae leo.',
         images: [

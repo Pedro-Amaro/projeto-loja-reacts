@@ -2,6 +2,7 @@ import '../../assets/css/auth.css';
 import cover from '../../assets/img/cover-login.jpg';
 import logo from '../../assets/img/Logo3.png';
 import { Link } from 'react-router-dom';
+import './login.css';
 import {
     Grid,
     TextField,
@@ -26,9 +27,7 @@ const Login = () => {
     const toggleVisibility = () => {
         setvisibilityToggle(!visibilityToggle)
     }
-    return <Grid container spacing={2} style={{
-        height:'100vh'
-    }}> 
+    return <Grid container spacing={2} className="GRID1"> 
                 <Grid className='leftSide' item sx={{
                     padding: '20',
                     boxSizing: 'border-box'
@@ -45,7 +44,7 @@ const Login = () => {
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={5} lg={4}>
-                    <Stack spacing={2} style={{
+                    <Stack spacing={2}  style={{
                         height:'100%',
                         justifyContent: 'center',
                         alignItems:'center',
@@ -53,10 +52,10 @@ const Login = () => {
                         paddingRight:16,
                         boxSizing: 'border-box',
                     }}>
-                         <Stack>
+                        <Stack>
                             <img src={logo} style={{
-                                 width: '85%',
-                                 marginLeft: '35px'
+                                width: '85%',
+                                marginLeft: '35px'
                             }} alt="Logo"/>
                     </Stack>
                         <h1>Sign in </h1>
@@ -80,8 +79,8 @@ const Login = () => {
                                 type={visibilityToggle ? 'text' : 'password'} 
                                 endAdornment={<InputAdornment position="end">
                                 <IconButton
-                                 aria-label="Clique aqui"
-                                 onClick={toggleVisibility}
+                                aria-label="Clique aqui"
+                                onClick={toggleVisibility}
                                 >
                                 {
                                     visibilityToggle ?<VisibilityOff/>  : <Visibility/>
@@ -94,19 +93,19 @@ const Login = () => {
                             <Grid item xs={12} sx={{
                                 marginBottom:'10px'
                             }}>
-                             <Button fullWidth style={{display: 'inline'}} variant="contained" endIcon={<LoginIcon/>}>Sign</Button>
+                            <Button fullWidth style={{display: 'inline'}} variant="contained" endIcon={<LoginIcon/>}>Sign</Button>
                             </Grid>
                             <Link
                             style={{
                                 textAlign: 'center',
                                 display:'block',
                                 width: '100%',
-                             }} 
-                              to="/register">create account</Link>
+                            }} 
+                            to="/register">create account</Link>
                         </Grid>
                     </Stack>
                 </Grid>
-           </Grid>
+            </Grid>
 } 
 
 export default Login;

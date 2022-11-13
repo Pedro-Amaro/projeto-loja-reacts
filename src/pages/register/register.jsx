@@ -61,8 +61,8 @@ const Register = () => {
                     }}>
                         <Stack>
                             <img src={logo} style={{
-                                 width: '85%',
-                                 marginLeft: '35px'
+                                width: '85%',
+                                marginLeft: '35px'
                             }} alt="Logo"/>
                         </Stack>
                         <h1>Register your user</h1>

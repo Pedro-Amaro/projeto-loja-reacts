@@ -97,7 +97,6 @@ const Product = () => {
                     </Link>
                 
             </Grid>
-
         </Grid>
 
    // return <h1>
